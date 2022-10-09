@@ -1,0 +1,106 @@
+.articles-section {
+  margin-bottom: 262px;
+}
+.articles__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  color: $maincolor;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.articles__list {
+  @include flex;
+}
+.articles__item:not(:last-child) {
+  margin-right: 24px;
+}
+.articles__item {
+  width: 305px;
+  background: #fefefe;
+  border: 1px solid #e4e4e2;
+  border-radius: 5px;
+  padding: 201px 22px 37px 30px;
+  background-image: url("../../imgs/article-img1.png");
+  background-repeat: no-repeat;
+}
+.articles__item:nth-child(2) {
+  width: 640px;
+  background-image: url("../../imgs/articles-img2.png");
+  background-repeat: no-repeat;
+  background-size: 305px 100%;
+  padding: 41px 35px 37px 336px;
+}
+.articles__item:nth-child(2) > .articles__data {
+  margin-bottom: 11px;
+}
+.articles__item:nth-child(2) > h6 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+.articles__item:nth-child(3) {
+  background-image: url("../../imgs/articles-img3.png");
+}
+.articles__data {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
+  margin-bottom: 2px;
+  text-align: end;
+}
+.articles__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.articles__text {
+  @include text-style;
+  color: $grey;
+  margin-bottom: 34px;
+}
+.articles__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $maincolor;
+  background-image: url("../../imgs/header-btn-i.svg");
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-bottom: 3px;
+}
+.articles__link:hover {
+  color: $golden;
+}
+.articles__link:active {
+  opacity: 0.6;
+}
+@media screen and (max-width: 1370px) {
+  .articles__list {
+    flex-wrap: wrap;
+  }
+  .articles__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .articles-section {
+    margin-bottom: 180px;
+  }
+  .articles__title {
+    font-size: 43px;
+    line-height: 37px;
+    margin-bottom: 58px;
+  }
+  .articles__subtitle {
+    font-size: 20px;
+  }
+  .articles__item:nth-child(2) {
+    width: 305px;
+    background-image: none;
+    padding: 21px 22px 37px 30px;
+  }
+}

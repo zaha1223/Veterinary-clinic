@@ -1,0 +1,122 @@
+.hero-section {
+  padding: 153px 97px;
+  background-image: url("../../imgs/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 120px;
+}
+.hero-info {
+  width: 608px;
+  margin-left: auto;
+  position: relative;
+}
+.hero-info__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: $maincolor;
+  margin-bottom: 29px;
+}
+.hero-info__title span {
+  color: #78c0de;
+}
+.hero-info__text {
+  width: 545px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #949494;
+  margin-bottom: 38px;
+}
+.hero-info__link {
+  width: 181px;
+  height: 50px;
+  padding: 15px 39px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  display: inline-block;
+  background: #333333;
+  border-radius: 3px;
+  transition: background 0.4s ease;
+}
+.hero-info__link:hover {
+  background-color: $golden;
+  color: $maincolor;
+}
+.hero-info__link:active {
+  opacity: 0.6;
+}
+.hero-info__img {
+  position: absolute;
+  right: -117px;
+  bottom: -323px;
+}
+@media screen and (max-width: 1320px) {
+  .hero-info__title {
+    font-size: 59px;
+    line-height: 51px;
+    margin-bottom: 20px;
+  }
+  .hero-info__text {
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .hero-section {
+    background-image: none;
+    margin-bottom: 0;
+  }
+  .hero-info {
+    margin-left: 0;
+  }
+  .hero-info__img {
+    position: absolute;
+    right: -499px;
+    bottom: -134px;
+  }
+}
+@media screen and (max-width: 1165px) {
+  .hero-info__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 715px) {
+  .hero-section {
+    padding: 78px 70px 0 30px;
+    margin-bottom: 100px;
+  }
+  .hero-info {
+    width: 508px;
+  }
+  .hero-info__title {
+    font-size: 45px;
+    line-height: 42px;
+  }
+  .hero-info__text {
+    width: 500px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .hero-section {
+    padding: 60px 0 0 0;
+  }
+  .hero-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 475px) {
+  .hero-info {
+    width: 338px;
+    margin: 0 auto;
+  }
+  .hero-info__title {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .hero-info__text {
+    width: 322px;
+  }
+}
