@@ -34,12 +34,8 @@
               </li>
             </ul>
             <div class="header-content__times">
-              <time class="header-content__time" datetime="Пн-Пт-8:00-18:00">
-                Пн - Пт 8:00 - 18:00
-              </time>
-              <time class="header-content__time" datetime="Сб-Вс-8:00-14:00">
-                Сб - Вс 8:00 - 14:00
-              </time>
+              <time class="header-content__time">Пн - Пт 8:00 - 18:00</time>
+              <time class="header-content__time">Сб - Вс 8:00 - 14:00</time>
             </div>
           </div>
           <div class="header">
@@ -73,14 +69,11 @@
               </ul>
             </nav>
             <button class="header__btn">Задать вопрос</button>
-            <picture>
-              <source media="(max-width:1165px)" />
-              <img
-                class="hamburger-img"
-                src="./imgs/hamburger-img.svg"
-                alt="hamburger-icon"
-              />
-            </picture>
+            <img
+              class="hamburger-img"
+              src="./imgs/hamburger-img.svg"
+              alt="hamburger-icon"
+            />
           </div>
         </div>
       </header>
@@ -282,16 +275,12 @@
                 <input
                   class="feedback__inpt"
                   type="text"
-                  placeholder="Ваше имя"
-                  name="fname"
-                  id="fname"
+                  placeholder="Ваше-имя"
                 />
                 <input
-                  class="feedback__inpt"
                   type="email"
+                  class="feedback__inpt"
                   placeholder="Email для обратной связи"
-                  name="email"
-                  id="email"
                 />
                 <textarea
                   class="feedback__textarea"
@@ -343,8 +332,8 @@
             </li>
           </ul>
           <div class="footer__dates">
-            <datetime data-="Пн-Пт"> Пн - Пт 8:00 - 18:00 </datetime>
-            <datetime data-="Сб-Вс"> Сб - Вс 8:00 - 14:00 </datetime>
+            <time> Пн - Пт 8:00 - 18:00 </time>
+            <time>Сб - Вс 8:00 - 14:00</time>
           </div>
           <address class="footer__site-address">
             г. Мариуполь, проспект Победы, 48а
@@ -364,7 +353,7 @@
       </div>
     </footer>
     <div class="modal">
-      <img src="./imgs/modal-del.svg" alt="" class="modal__del" />
+      <img class="modal__del" src="./imgs/modal-del.svg" alt="modal-del" />
       <ul class="modal__list">
         <li class="modal__item">
           <a href="./index.html" class="modal__link">Главная</a>
